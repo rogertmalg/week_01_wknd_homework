@@ -6,6 +6,9 @@ def get_pet_shop_name(shop_name):
 def get_total_cash(shop_name):
     return shop_name["admin"]["total_cash"]
 
-def add_or_remove_cash(shop_name, amount):
+def add_or_remove_cash(shop_name, amount): 
    shop_name["admin"]["total_cash"] += amount
+# this solves 3 and 4 
 
+def get_pets_sold(shop_name):
+    return shop_name["admin"]["pets_sold"]
