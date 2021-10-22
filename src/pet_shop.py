@@ -76,3 +76,4 @@ def customer_can_afford_pet(customer_index, new_pet):
     if customer_index["cash"] >= new_pet["price"]:
         can_afford = True
     return can_afford
+# solves 18, 19 and 20 
