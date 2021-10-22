@@ -1,5 +1,9 @@
 # WRITE YOUR FUNCTIONS HERE
 
+import pdb
+# pdb.set_trace()
+
+
 def get_pet_shop_name(shop_name):
     return shop_name["name"]
 
@@ -18,3 +22,11 @@ def increase_pets_sold(shop_name, number_pets):
 
 def get_stock_count(shop_name):
     return len(shop_name["pets"])
+
+def get_pets_by_breed(shop_name, breed_name):
+    pets_breed = []
+    for pet in shop_name["pets"]:
+        if pet["breed"] == breed_name:
+            pets_breed.append(pet)
+            
+    return pets_breed
