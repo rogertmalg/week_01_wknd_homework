@@ -68,3 +68,11 @@ def get_customer_pet_count(customer_index):
 
 def add_pet_to_customer(customer_index, new_pet):
     customer_index["pets"].append(new_pet)
+
+# Optional Exercises 
+
+def customer_can_afford_pet(customer_index, new_pet):
+    can_afford = False
+    if customer_index["cash"] >= new_pet["price"]:
+        can_afford = True
+    return can_afford
