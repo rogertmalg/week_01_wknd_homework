@@ -28,13 +28,24 @@ def get_pets_by_breed(shop_name, breed_name):
     for pet in shop_name["pets"]:
         if pet["breed"] == breed_name:
             pets_breed.append(pet)
-            
+
     return pets_breed
+# this solves 8 and 9
+
+# def find_pet_by_name(shop_name, pet_name):
+#     found_pet = {}
+#     for pet in shop_name["pets"]:
+#         if pet["name"] == pet_name:
+#             found_pet.update(pet)
+
+#     return found_pet
+# Changed above funtion to function bellow, this solves 10 and 11
 
 def find_pet_by_name(shop_name, pet_name):
-    found_pet = {}
+    found_pet = None
     for pet in shop_name["pets"]:
         if pet["name"] == pet_name:
-            found_pet.update(pet)
+            found_pet = pet
+
     return found_pet
     
